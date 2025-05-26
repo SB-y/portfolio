@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>a.lienportfolio {font-weight: bold;}</style>
+</head>
+
+
+<body>
+
+    <header>
+        <h1>PORTFOLIO</h1>
+        <nav id="navigation">
+        </nav>
+    </header>
+
+    <main>
+        <section class="bandeau2" id="pages"></section>
+
+        <section class="container">
+            <div class="portfolio">
+        <h2 id="titrePortfolio">Mon projet</h2>
+
+        <div id="lienretour">
+            <a href="portfolio.html">| Retour |</a>
+        </div>
+
+        <div class="imgprojet">
+            <img src="images/b_cat1.png">
+        </div>
+                <div class="containerprojet">
+                    <div class="descriptionprojet">
+                        <h3>Appel d'API publique PokeAPI</h3>
+                        <hr>
+                        <h4>Contexte et descriptif du projet</h4>
+                        <p>Il a s'agit dans un premier temps de créer un formulaire HTML/CSS. Ensuite, une fonction a été déclarée comme async avec await fetch à l'intérieur. Une requête HTTP est envoyée à l'API publique pokeAPI. Les données de la carte créée sous JavaScript sont extraites de la réponse JSON.</p>
+                    </div>
+
+                    <div class="galerieprojet">
+
+                        <form id="formPokemon">
+                            <label for="nomPoke">Saisir le nom d'un pokémon</label>
+                            <input type="text" id="nom" name="nom"><br>
+                            <button id="boutonForm" type="submit">Go !</button>
+                        </form>
+                        <section id="cartePk"> 
+                            <span id="nomPoke"></span>
+                            <span id="poidsPoke"></span>
+                            <span id="imgPoke"></span>
+                        </section>
+                        
+                    </div>
+
+                 </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer id="footer">
+    </footer>
+    
+    <script src="script.js" type="text/Javascript"></script>
+    <script src="scriptpoke.js" type="text/Javascript"></script>
+   
+</body>
+</html>
