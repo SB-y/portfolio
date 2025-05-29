@@ -750,7 +750,7 @@ input:focus {
     }
 
     .aproposaccueil p {
-        font-size: 0.8rem;
+        font-size: 0.84rem;
     }
 
     .aproposaccueil h2,
@@ -822,6 +822,10 @@ input:focus {
     .bandeau3 {
         height: 20vh;
         width: 100%;
+    }
+
+    strong.g {
+        color: #444343;
     }
 
     /*adaptation mobile page apropos*/
@@ -943,6 +947,13 @@ input:focus {
     textarea {
         width: 50vw;
         /*pour diminuer la largeur des champs par rapport à la viewport*/
+    }
+
+
+    /*adaptation mobile pour footer*/
+
+    #footer p {
+        font-size: small;
     }
 
 }
