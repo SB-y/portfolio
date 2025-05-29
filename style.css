@@ -864,7 +864,7 @@ input:focus {
         justify-content: center;
         row-gap: 8vh;
         gap: 4vh;
-        width: 70vw;
+        width: 80vw;
         /*pour diminuer un peu la largeur de la galerie*/
         margin-top: 5rem;
     }
