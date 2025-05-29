@@ -376,6 +376,7 @@ p {
 
 img {
     width: 97%;
+    padding-left: 10px;
 }
 
 
@@ -733,6 +734,7 @@ input:focus {
         text-align: center;
     }
 
+
     /*adaptation mobile page index*/
 
 
@@ -811,6 +813,11 @@ input:focus {
         margin: 0;
     }
 
+    .mesprojetsaccueil p,
+    .contactezmoiaccueil p {
+        font-weight: 200;
+    }
+
     .bandeau2,
     .bandeau3 {
         height: 20vh;
@@ -823,6 +830,10 @@ input:focus {
         display: grid;
         grid-template-columns: minmax(200px, 1fr);
         width: 70vw;
+    }
+
+    .galerieformations p {
+        font-weight: 200;
     }
 
     .imgcomp {
@@ -858,6 +869,10 @@ input:focus {
         padding: 0;
     }
 
+    #galerie p {
+        font-weight: 200;
+    }
+
     #liensCat {
         display: flex;
         flex-direction: column;
@@ -878,6 +893,12 @@ input:focus {
         /*pour diminuer la largeur de la page projet2 par rapport à la viewport*/
         margin: 0 auto;
         /*pour centrer la page projet2*/
+        padding: 0 32px 0 32px;
+    }
+
+    .descriptionprojet h3,
+    .descriptionprojet p {
+        font-weight: 200;
     }
 
     .galerieprojet form {
@@ -886,6 +907,10 @@ input:focus {
 
     #boutonForm {
         width: 15vw;
+    }
+
+    .imgprojet img {
+        width: 75vw;
     }
 
     .cartepoke {
