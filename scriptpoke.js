@@ -1,7 +1,7 @@
 document.getElementById("formPokemon").addEventListener("submit", afficherInfos);
 
 async function afficherInfos(event) {
-    event.preventDefault(); 
+    event.preventDefault();
 
     const nomSaisi = document.getElementById("nom").value;
     const spaceNom = document.getElementById("nomPoke");
@@ -23,13 +23,14 @@ async function afficherInfos(event) {
         carte.appendChild(spaceNom);
         carte.appendChild(spacePoids);
         carte.appendChild(spaceImg);
-       
+
         titrePoke.textContent = `Carte Pokémon`;
-        spaceNom.textContent =`Nom : ${data.name}`;
-        spacePoids.textContent =`Poids : ${data.weight}kg`;
+        spaceNom.textContent = `Nom : ${data.name}`;
+        spacePoids.textContent = `Poids : ${data.weight}kg`;
         spaceImg.innerHTML = `<img src="${data.sprites.front_shiny}">`;
 
     } catch (error) {
+        carte.style.display = "none";
         spaceNom.textContent = "";
         spacePoids.textContent = "";
         spaceImg.textContent = "";

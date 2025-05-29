@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
-    box-sizing: border-box; /* pour que tout soit inclus dans les width (padding, margin)*/
+    box-sizing: border-box;
+    /* pour que tout soit inclus dans les width (padding, margin)*/
 }
 
 
 body {
-    margin: 0; 
-    padding: 0; 
+    margin: 0;
+    padding: 0;
 }
 
 /* partie haute*/
@@ -15,10 +16,12 @@ body {
 header {
     /*background-color: #96aa99;*/
     text-align: center;
-    padding-top:0.3rem; /* j'ai utilisé des valeurs relatives de base, il  me semble que c'est mieux pour le côté adaptation d'écran*/
-    padding-bottom:0.3rem;
+    padding-top: 0.3rem;
+    /* j'ai utilisé des valeurs relatives de base, il  me semble que c'est mieux pour le côté adaptation d'écran*/
+    padding-bottom: 0.3rem;
     color: black;
-    width: 100%; /* au cas où, je mets une width qui prend toute la largeur*/
+    width: 100%;
+    /* au cas où, je mets une width qui prend toute la largeur*/
     display: grid;
     grid-template-columns: 2fr 1fr;
     font-family: "Montserrat", sans-serif;
@@ -28,28 +31,31 @@ h1 {
     grid-column: 1 / 2;
     text-align: center;
     justify-self: flex-start;
-    padding-left:3rem;
+    padding-left: 3rem;
     font-weight: 400;
 }
 
 nav {
- display:flex;
- flex-direction: row;
- justify-content: center;
- align-items: center;
- padding-right: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-right: 1rem;
 }
 
 nav a {
-    text-decoration: none; /*pour que les liens ne soient pas soulignés par défaut*/
+    text-decoration: none;
+    /*pour que les liens ne soient pas soulignés par défaut*/
     color: black;
-    padding: 0 0.9rem 0 0.9rem; /*pour qu'il y ait un espace entre les liens et au-dessus*/
+    padding: 0 0.9rem 0 0.9rem;
+    /*pour qu'il y ait un espace entre les liens et au-dessus*/
     font-size: 0.9rem;
     font-weight: 300;
 }
 
 nav a:hover {
-    text-decoration:underline; /*pour que les liens soient soulignés au passage de souris*/
+    text-decoration: underline;
+    /*pour que les liens soient soulignés au passage de souris*/
 }
 
 
@@ -72,10 +78,10 @@ footer p {
 
 
 h2 {
-    margin:0;
-    padding:0;
-    font-size:4rem;
-    text-align:center;
+    margin: 0;
+    padding: 0;
+    font-size: 4rem;
+    text-align: center;
     padding-bottom: 5rem;
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
@@ -83,7 +89,7 @@ h2 {
 
 p {
     font-size: 1.2rem;
-    text-align: justify; 
+    text-align: justify;
     font-family: "Poppins", sans-serif;
     font-weight: 100;
 }
@@ -93,10 +99,10 @@ p {
 
 .bandeau1 {
     position: relative;
-    margin:0;
+    margin: 0;
     width: 100%;
-    aspect-ratio: 3/2; 
-    height:80vh;
+    aspect-ratio: 3/2;
+    height: 80vh;
     background-image: URL(https://images.unsplash.com/photo-1679071191790-1292ab344fe3?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGltYWdlJTIwbm9pciUyMGV0JTIwYmxhbmMlMjBuYXR1cmV8ZW58MHx8MHx8fDA%3D);
     background-size: cover;
     background-repeat: no-repeat;
@@ -114,50 +120,51 @@ p {
     z-index: 1;
 }
 
-.aproposaccueil{
+.aproposaccueil {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    width:40vw;
+    width: 40vw;
     height: 60vh;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 1rem 1.5rem 1rem 1.5rem;
-    position:absolute;
-    top:23vh;
-    left:7vw;
+    position: absolute;
+    top: 23vh;
+    left: 7vw;
     z-index: 2;
     text-align: center;
 }
 
 .aproposaccueil h2 {
-    font-size:2rem;
+    font-size: 2rem;
     font-weight: 400;
-    padding-bottom:0.5rem;
+    padding-bottom: 0.5rem;
     text-align: left;
 }
 
 .aproposaccueil p {
-    font-size:0.9rem;
+    font-size: 0.9rem;
     font-weight: 200;
     line-height: 1.3rem;
-    padding-bottom:0.2rem;
+    padding-bottom: 0.2rem;
 }
 
-.aproposaccueil a{
+.aproposaccueil a {
     text-decoration: none;
-    font-size:1rem;
-    color:black;
+    font-size: 1rem;
+    color: black;
     transition: all 200ms;
     font-family: "Poppins", sans-serif;
     text-align: left;
 }
- .contactezmoiaccueil a {
+
+.contactezmoiaccueil a {
     text-decoration: none;
-    font-size:0.7rem;
-    color:white;
+    font-size: 0.7rem;
+    color: white;
     background-color: rgb(0, 0, 0);
-    border-radius:25px;
-    padding:6px 15px 6px 15px;
+    border-radius: 25px;
+    padding: 6px 15px 6px 15px;
     transition: all 200ms;
     font-family: "Poppins", sans-serif;
 }
@@ -165,21 +172,22 @@ p {
 .aproposaccueil a:hover {
     color: #DCAE4E;
 }
+
 .contactezmoiaccueil a:hover {
-    color:black;
+    color: black;
     background-color: #DCAE4E;
 }
 
 
 .container2 {
-    margin : 10rem 0 10rem 0;
+    margin: 10rem 0 10rem 0;
 }
 
 .mesprojetsaccueil {
-    display:grid;
+    display: grid;
     grid-template-columns: 20vw 1fr 1fr 20vw;
     grid-template-rows: auto;
-    padding:0;
+    padding: 0;
 }
 
 .mesprojetsaccueil p {
@@ -201,7 +209,7 @@ p {
 }
 
 #imgprojets {
-    width:100%;
+    width: 100%;
     padding-left: 1rem;
     opacity: 0.6;
 }
@@ -215,10 +223,10 @@ p {
 
 
 .bandeau3 {
-    margin:0;
+    margin: 0;
     width: 100%;
-    aspect-ratio: 3/2; 
-    height:30vh;
+    aspect-ratio: 3/2;
+    height: 30vh;
     background-image: URL(https://images.unsplash.com/photo-1611908491758-9544a9edb8c0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTIyfHxtb3RpZiUyMGdyYXBoaXF1ZXxlbnwwfHwwfHx8MA%3D%3D);
     background-size: cover;
     background-repeat: no-repeat;
@@ -227,11 +235,11 @@ p {
 }
 
 .container3 {
-    display:grid;
+    display: grid;
     grid-template-columns: 30vw 1fr 30vw;
     grid-template-rows: auto;
-    margin : 10rem 0 10rem 0;
-    padding:0;
+    margin: 10rem 0 10rem 0;
+    padding: 0;
 }
 
 .contactezmoiaccueil {
@@ -239,13 +247,14 @@ p {
     text-align: center;
 }
 
-.mesprojetsaccueil p, .contactezmoiaccueil p {
+.mesprojetsaccueil p,
+.contactezmoiaccueil p {
     font-weight: 100;
     font-size: 1rem;
 }
 
 .contactezmoiaccueil p {
-    padding-bottom:5rem;
+    padding-bottom: 5rem;
 }
 
 
@@ -254,10 +263,10 @@ p {
 /* propriétés pour la page a proposl*/
 
 .bandeau2 {
-    margin:0;
+    margin: 0;
     width: 100%;
-    aspect-ratio: 3/2; 
-    height:60vh;
+    aspect-ratio: 3/2;
+    height: 60vh;
     background-image: URL(https://plus.unsplash.com/premium_photo-1681400537683-23c41e6c4c42?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fG1vdGlmJTIwZ3JhcGhpcXVlfGVufDB8fDB8fHww);
     background-size: cover;
     background-repeat: no-repeat;
@@ -265,12 +274,14 @@ p {
     background-attachment: fixed;
 }
 
-.parcours, .competences {
-    margin : 5rem 0 5rem 0;
+.parcours,
+.competences {
+    margin: 5rem 0 5rem 0;
 }
 
-.parcours h2, .competences h2 {
-    margin-bottom:5rem;
+.parcours h2,
+.competences h2 {
+    margin-bottom: 5rem;
 }
 
 .galerieformations {
@@ -280,18 +291,18 @@ p {
     justify-content: center;
     gap: 8vh;
     margin: 0 auto;
-    width:75%;
+    width: 75%;
 }
 
 .formation {
-    height:60vh;
+    height: 60vh;
     border: 2px solid #6CBBA6;
     border-radius: 20px;
     transform: scale(1);
     transition: transform 1000ms;
     font-family: "Poppins", sans-serif;
     padding: 0rem 1rem 0rem 1rem;
-    margin:0;
+    margin: 0;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
@@ -304,16 +315,16 @@ p {
 
 .logo {
     width: 100%;
-    height:25vh;
+    height: 25vh;
     display: flex;
     justify-content: center;
 }
 
 .logo img {
-    width:100%;
+    width: 100%;
     object-fit: contain;
     border-radius: 20px;
-    padding:0;
+    padding: 0;
 }
 
 
@@ -335,18 +346,21 @@ p {
 }
 
 .texteformation a {
-    transition: all 200ms; /*pour initialiser l'animation du lien avec une transition d'un cinquième de seconde*/
+    transition: all 200ms;
+    /*pour initialiser l'animation du lien avec une transition d'un cinquième de seconde*/
 }
 
-.texteformation a{
+.texteformation a {
     color: black;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
     font-weight: 300;
 }
+
 .texteformation a:hover {
-    color: #6CBBA6; /*animation passage souris changement de couleur du lien*/
+    color: #6CBBA6;
+    /*animation passage souris changement de couleur du lien*/
 }
 
 
@@ -354,92 +368,102 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 80vw; /*pour diminuer la largeur de la galerie par rapport à la viewport*/
+    width: 80vw;
+    /*pour diminuer la largeur de la galerie par rapport à la viewport*/
     margin: 0 auto;
 }
 
 
 img {
-    width:97%;
+    width: 97%;
 }
-    
 
-#img1_hover, #img2_hover, #img3_hover {
-    display:none;
+
+#img1_hover,
+#img2_hover,
+#img3_hover {
+    display: none;
 }
 
 /* propriétés pour la galerie de la page portfolio*/
 
 .portfolio {
-    margin : 5rem 0 5rem 0;
+    margin: 5rem 0 5rem 0;
 }
 
 button {
-    color:black;
-    border:none;
+    color: black;
+    border: none;
     background-color: white;
 }
 
-button:hover{
-    color: #6CBBA6; /*animation passage souris changement de couleur des cat*/
+button:hover {
+    color: #6CBBA6;
+    /*animation passage souris changement de couleur des cat*/
     cursor: pointer;
 }
 
-#liensCat{
-    width:70vw;
+#liensCat {
+    width: 70vw;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     margin: 0 auto;
 }
 
-#liensCat button{
-   font-family: "Poppins", sans-serif;
-   font-size: 1.2rem;
-   font-weight: 200;
+#liensCat button {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
 }
 
 
 #galerie {
-    margin: 7rem auto 4rem auto; 
-    display:grid;
-    grid-template-columns: minmax(230px, 1fr) minmax(230px, 1fr); /*organisation de la grille avec un repeat auto-fit, min 350px - pas besoin de media querie*/
+    margin: 7rem auto 4rem auto;
+    display: grid;
+    grid-template-columns: minmax(230px, 1fr) minmax(230px, 1fr);
+    /*organisation de la grille avec un repeat auto-fit, min 350px - pas besoin de media querie*/
     grid-template-rows: auto;
     justify-content: center;
     row-gap: 8vh;
-    gap:4vh;
-    width:70%; /*pour diminuer un peu la largeur de la galerie*/
+    gap: 4vh;
+    width: 70%;
+    /*pour diminuer un peu la largeur de la galerie*/
 }
 
-#galerie article{
+#galerie article {
     border: 1px solid #EBE5E5;
     border-radius: 20px;
     transform: scale(1);
-    transition: transform 1000ms; /*pour initialiser l'animation de grossissement avec une transition d'une seconde*/
+    transition: transform 1000ms;
+    /*pour initialiser l'animation de grossissement avec une transition d'une seconde*/
     padding: 1rem 1rem 1rem 1rem;
 }
 
 #galerie article:hover {
-    transform: scale(1.08); /*grossissement de 8%*/
+    transform: scale(1.08);
+    /*grossissement de 8%*/
 }
 
 #galerie img {
-    aspect-ratio: 3/2; 
-    width: 100%;         
-    height: auto;        
-    object-fit: cover;  
+    aspect-ratio: 3/2;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
     filter: opacity(1);
-    transition: filter 1000ms; 
-    padding:0;
+    transition: filter 1000ms;
+    padding: 0;
 }
+
 #galerie img:hover {
-    filter: opacity(0.6); /*animation passage souris changement d'opacité*/
+    filter: opacity(0.6);
+    /*animation passage souris changement d'opacité*/
 }
 
 #galerie h3 {
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
-    font-weight:200;
+    font-weight: 200;
 }
 
 #galerie p {
@@ -451,32 +475,39 @@ button:hover{
     text-decoration: none;
     color: black;
     font-family: "Poppins", sans-serif;
-    font-size:0.9rem;
+    font-size: 0.9rem;
     font-weight: 300;
-    transition: all 200ms; /*pour initialiser l'animation du lien avec une transition d'un cinquième de seconde*/
+    transition: all 200ms;
+    /*pour initialiser l'animation du lien avec une transition d'un cinquième de seconde*/
     display: flex;
-    justify-content: right; /*pour que le lien se retrouve à droite : text-align n'a pas fonctionné*/
+    justify-content: right;
+    /*pour que le lien se retrouve à droite : text-align n'a pas fonctionné*/
 }
 
 #galerie a:hover {
-    color: #6CBBA6; /*animation passage souris changement de couleur du lien*/
+    color: #6CBBA6;
+    /*animation passage souris changement de couleur du lien*/
 }
 
 /* propriétés pour le formulaire de la page projet2*/
 
-#lienretour{
-    text-align:center;
+#lienretour {
+    text-align: center;
 }
-#lienretour a{
+
+#lienretour a {
     text-decoration: none;
     color: black;
     font-family: "Poppins", sans-serif;
     font-size: 0.9rem;
     font-weight: 300;
-    transition: all 200ms; /*pour initialiser l'animation du lien avec une transition d'un cinquième de seconde*/
+    transition: all 200ms;
+    /*pour initialiser l'animation du lien avec une transition d'un cinquième de seconde*/
 }
+
 #lienretour a:hover {
-    color: #6CBBA6; /*animation passage souris changement de couleur du lien*/
+    color: #6CBBA6;
+    /*animation passage souris changement de couleur du lien*/
 }
 
 .imgprojet {
@@ -486,81 +517,93 @@ button:hover{
     align-items: center;
     width: 50%;
     margin: 0 auto;
-    margin-bottom:4rem;
-    margin-top:4rem;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
 }
 
 .imgprojet img {
     width: 100%;
-    aspect-ratio: 3/2; 
+    aspect-ratio: 3/2;
     object-fit: cover;
     border-radius: 20px;
-    padding:0;
+    padding: 0;
 }
 
-.containerprojet{
+.containerprojet {
     display: grid;
-    grid-template-columns: 1fr 1fr; /*pour que le contenu de la page projet2 soit organisé en deux colonnes*/
+    grid-template-columns: 1fr 1fr;
+    /*pour que le contenu de la page projet2 soit organisé en deux colonnes*/
     grid-template-rows: auto;
     justify-content: center;
     align-items: center;
-    width:70vw; /*pour diminuer la largeur de la page projet2 par rapport à la viewport*/
-    margin:0 auto; /*pour centrer la page projet2*/
+    width: 70vw;
+    /*pour diminuer la largeur de la page projet2 par rapport à la viewport*/
+    margin: 0 auto;
+    /*pour centrer la page projet2*/
 }
 
 .descriptionprojet {
-grid-column: 1/2; /*pour que la description soit dans la première colonne*/
+    grid-column: 1/2;
+    /*pour que la description soit dans la première colonne*/
 }
+
 .galerieprojet {
-    grid-column: 2/3; /*pour que la galerie soit dans la deuxième colonne*/
+    grid-column: 2/3;
+    /*pour que la galerie soit dans la deuxième colonne*/
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.descriptionprojet h3{
+.descriptionprojet h3 {
     font-family: "Poppins", sans-serif;
     font-weight: 100;
     font-size: 1rem;
 }
-.descriptionprojet p, .descriptionprojet h4 {
+
+.descriptionprojet p,
+.descriptionprojet h4 {
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    color:gray;
+    color: gray;
     font-size: 0.9rem;
 }
+
 .descriptionprojet hr {
-    margin-bottom:4rem;
+    margin-bottom: 4rem;
 }
 
 .galerieprojet form {
-width:25vw;
-background-color: #DCAE4E;
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: center;
+    width: 25vw;
+    background-color: #DCAE4E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
+
 .galerieprojet label {
-    padding-left:0;
+    padding-left: 0;
     padding-right: 0;
 }
+
 .galerieprojet form input {
     width: 60%;
     margin-bottom: 2vh;
     border-radius: 5px;
-    outline:none;
-    border:none;
+    outline: none;
+    border: none;
 }
+
 #boutonForm {
     background-color: black;
     color: white;
-    border-radius:25px;
-    border:none;
+    border-radius: 25px;
+    border: none;
     font-family: "Poppins", sans-serif;
-    font-size:0.7rem;
-    width:6vw;
+    font-size: 0.7rem;
+    width: 6vw;
 }
 
 .cartepoke {
@@ -573,7 +616,8 @@ justify-content: center;
     border-radius: 20px;
 }
 
-.cartepoke #nomPoke, .cartepoke #poidsPoke {
+.cartepoke #nomPoke,
+.cartepoke #poidsPoke {
     font-family: "Poppins", sans-serif;
     font-weight: 200;
     font-size: 0.8rem;
@@ -583,61 +627,69 @@ justify-content: center;
 
 /* propriétés pour le formulaire de la page contact*/
 
-.contact{
-    margin : 5rem 0 5rem 0;
+.contact {
+    margin: 5rem 0 5rem 0;
 }
 
 form {
-    width:50vw; /*pour diminuer la largeur du form par rapport à la viewport*/
+    width: 50vw;
+    /*pour diminuer la largeur du form par rapport à la viewport*/
     background-color: rgba(108, 187, 166, 0.15);
     border-radius: 5px;
-    padding:20px 0px 20px 0px;
+    padding: 20px 0px 20px 0px;
     margin: 4rem auto;
     display: flex;
-    flex-direction: column; /*pour que le formulaire soit organisé en colonne*/
+    flex-direction: column;
+    /*pour que le formulaire soit organisé en colonne*/
 }
 
-input, textarea {
-    width: 35vw; /*pour diminuer la largeur des input et du cadre de texte par rapport à la viewport*/
+input,
+textarea {
+    width: 35vw;
+    /*pour diminuer la largeur des input et du cadre de texte par rapport à la viewport*/
     margin: 0 auto 3vh auto;
     border-radius: 10px;
-    outline:none;
-    border:none;
-    transition: background-color 1000ms; /*pour initialiser l'animation de bordure avec une transition d'une seconde*/
-    padding:1vh;
+    outline: none;
+    border: none;
+    transition: background-color 1000ms;
+    /*pour initialiser l'animation de bordure avec une transition d'une seconde*/
+    padding: 1vh;
 }
 
 label {
-    padding:1.4vh 1.4vh 1.4vh 6vh;
-    font-size:14px;
+    padding: 1.4vh 1.4vh 1.4vh 6vh;
+    font-size: 14px;
     font-family: "Poppins", sans-serif;
     font-weight: 200;
 }
 
 .bouton {
-    margin-top:8vh;
+    margin-top: 8vh;
     background-color: black;
     color: white;
-    border-radius:25px;
-    border:none;
-    padding:6px 15px 6px 15px;
+    border-radius: 25px;
+    border: none;
+    padding: 6px 15px 6px 15px;
     font-family: "Poppins", sans-serif;
-    transition: all 200ms; /*pour initialiser l'animation du bouton avec une transition d'un cinquième de seconde - je crois*/
-    font-size:0.7rem;
-    width:7rem;
+    transition: all 200ms;
+    /*pour initialiser l'animation du bouton avec une transition d'un cinquième de seconde - je crois*/
+    font-size: 0.7rem;
+    width: 7rem;
 }
 
 
 .bouton:hover {
-    background-color: #6CBBA6; /*animation passage souris changement de couleur du bouton*/
+    background-color: #6CBBA6;
+    /*animation passage souris changement de couleur du bouton*/
     color: black;
     border: none;
     cursor: pointer;
 }
 
-input:focus{
-    border: 1px solid #60695D; /*animation lorsqu'on se trouve dans le champs de saisie : bordure verte*/
-  }
+input:focus {
+    border: 1px solid #60695D;
+    /*animation lorsqu'on se trouve dans le champs de saisie : bordure verte*/
+}
 
 .error {
     color: rgb(202, 40, 72);
@@ -654,40 +706,44 @@ input:focus{
 /*adaptation lorsque l'écran est inférieur à 899px*/
 @media screen and (max-width: 899px) {
 
-   /*adaptation mobile partie haute*/
-   header {
-    display:grid;
-    grid-template-columns: 1fr; /*pour que le header soit organisé en une seule colonne*/
+    /*adaptation mobile partie haute*/
+    header {
+        display: grid;
+        grid-template-columns: 1fr;
+        /*pour que le header soit organisé en une seule colonne*/
     }
-   h1 {
-    justify-self: center;
-    padding:0;
+
+    h1 {
+        justify-self: center;
+        padding: 0;
     }
-   
+
     nav {
-    display:flex;
-    flex-direction: column; /*liens en colonne en passant par un flex*/
-    padding-right: 0rem;
+        display: flex;
+        flex-direction: column;
+        /*liens en colonne en passant par un flex*/
+        padding-right: 0rem;
     }
-    nav a { 
-    padding-bottom:0.6rem;
+
+    nav a {
+        padding-bottom: 0.6rem;
     }
-    
+
     h2 {
-    text-align: center;
+        text-align: center;
     }
 
     /*adaptation mobile page index*/
 
 
     .aproposaccueil {
-        width:90vw;
+        width: 90vw;
         height: 53vh;
         background-color: rgba(255, 255, 255, 0.7);
         padding: 0rem 1.5rem 0rem 1.5rem;
         position: relative;
-        top:0;
-        left:0;
+        top: 0;
+        left: 0;
         z-index: 2;
     }
 
@@ -695,69 +751,78 @@ input:focus{
         font-size: 0.8rem;
     }
 
-    .aproposaccueil h2, .aproposaccueil a {
+    .aproposaccueil h2,
+    .aproposaccueil a {
         text-align: center;
     }
 
     .aproposaccueil h2 {
         font-size: 1.5rem;
     }
+
     .aproposaccueil a {
-        font-size:0.8rem;
+        font-size: 0.8rem;
     }
 
-    .bandeau1{
+    .bandeau1 {
         height: 58vh;
         margin-top: 3rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        }
-  
-        .mesprojetsaccueil, .container3 {
-            display:flex;
-            flex-direction: column;
-            padding:0;
-            width:70vw;
-            justify-self: center;
-            align-content: center;
-        }
-
-    .container2, .container3 {
-        margin:5rem 0 5rem 0;
     }
 
-    #imgprojets, #imgprojetshover {
-        padding:0;
+    .mesprojetsaccueil,
+    .container3 {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 70vw;
+        justify-self: center;
+        align-content: center;
     }
 
-    .container2 h2, .container3 h2 {
+    .container2,
+    .container3 {
+        margin: 5rem 0 5rem 0;
+    }
+
+    #imgprojets,
+    #imgprojetshover {
+        padding: 0;
+    }
+
+    .container2 h2,
+    .container3 h2 {
         text-align: center;
-        font-size:2.5rem;
-        padding-bottom:2rem;
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
         padding-left: 0;
-        margin-bottom:3rem;
+        margin-bottom: 3rem;
     }
-    .container2 p, .container3 p {
+
+    .container2 p,
+    .container3 p {
         text-align: justify;
-        font-size:0.9rem;
-        padding-bottom:2rem;
-        padding-right:0;
-        margin:0;
+        font-size: 0.9rem;
+        padding-bottom: 2rem;
+        padding-right: 0;
+        margin: 0;
     }
 
-    .bandeau2, .bandeau3 {
-        height:20vh;
-        width:100%;
+    .bandeau2,
+    .bandeau3 {
+        height: 20vh;
+        width: 100%;
     }
 
-      /*adaptation mobile page apropos*/
+    /*adaptation mobile page apropos*/
 
-      .galerieformations {
-        display:grid;
+    .galerieformations {
+        display: grid;
         grid-template-columns: minmax(200px, 1fr);
-        width:70vw;
+        width: 70vw;
     }
 
     .imgcomp {
@@ -769,30 +834,31 @@ input:focus{
     }
 
     .imgcomp img {
-        padding-bottom:2rem;
-        padding-left:0;
-        width:60vw;
+        padding-bottom: 2rem;
+        padding-left: 0;
+        width: 60vw;
     }
 
 
     /*adaptation mobile page projets-portfolio*/
 
     #galerie {
-        display:grid;
-        grid-template-columns: minmax(200px, 1fr); 
+        display: grid;
+        grid-template-columns: minmax(200px, 1fr);
         grid-template-rows: auto;
         justify-content: center;
         row-gap: 8vh;
-        gap:4vh;
-        width:70vw; /*pour diminuer un peu la largeur de la galerie*/
-        margin-top:5rem;
+        gap: 4vh;
+        width: 70vw;
+        /*pour diminuer un peu la largeur de la galerie*/
+        margin-top: 5rem;
     }
 
     #galerie img {
-        padding:0;
+        padding: 0;
     }
 
-    #liensCat{
+    #liensCat {
         display: flex;
         flex-direction: column;
         margin: 0 auto;
@@ -803,41 +869,55 @@ input:focus{
     }
 
 
-/*adaptation mobile page projet2*/
+    /*adaptation mobile page projet2*/
     .containerprojet {
         display: flex;
-        flex-direction: column; /*pour que le contenu de la page projet2 soit organisé en une seule colonne*/
-        width: 90vw; /*pour diminuer la largeur de la page projet2 par rapport à la viewport*/
-        margin:0 auto; /*pour centrer la page projet2*/
+        flex-direction: column;
+        /*pour que le contenu de la page projet2 soit organisé en une seule colonne*/
+        width: 90vw;
+        /*pour diminuer la largeur de la page projet2 par rapport à la viewport*/
+        margin: 0 auto;
+        /*pour centrer la page projet2*/
     }
 
     .galerieprojet form {
-        width:60vw;
-        }
-        #boutonForm {
-            width:15vw;
-        }
-    
-        .cartepoke {
-            width: 60vw;
-        }
-        
-
-    /*adaptation mobile titres h2*/
-    .mesprojets h2, .apropos h2, .contactezmoi h2, .competences h2, .parcours h2, .portfolio h2, .contact h2 {
-        font-size: 2.5rem;
-        padding-bottom:2rem;
-        margin-bottom:3rem;
+        width: 60vw;
     }
 
-  
+    #boutonForm {
+        width: 15vw;
+    }
+
+    .cartepoke {
+        width: 60vw;
+    }
+
+
+    /*adaptation mobile titres h2*/
+    .mesprojets h2,
+    .apropos h2,
+    .contactezmoi h2,
+    .competences h2,
+    .parcours h2,
+    .portfolio h2,
+    .contact h2 {
+        font-size: 2.5rem;
+        padding-bottom: 2rem;
+        margin-bottom: 3rem;
+    }
+
+
 
     /*adaptation mobile page contact*/
     form {
-        width:80vw; /*pour diminuer la largeur du form par rapport à la viewport*/
-    }
-    input, textarea {
-        width: 50vw; /*pour diminuer la largeur des champs par rapport à la viewport*/
+        width: 80vw;
+        /*pour diminuer la largeur du form par rapport à la viewport*/
     }
 
+    input,
+    textarea {
+        width: 50vw;
+        /*pour diminuer la largeur des champs par rapport à la viewport*/
     }
+
+}

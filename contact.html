@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <style>a.liencontact {font-weight: bold;}</style>
+    <style>
+        a.liencontact {
+            font-weight: bold;
+        }
+    </style>
 </head>
 
 
@@ -22,38 +27,41 @@
 
         <section class="container">
             <div class="contact">
-        <h2>Contactez-moi</h2>
-    
-        <form id="formContact">
-    
-            <label for="nom">Votre nom</label>
-            <input type="text" id="nom" name="nom" placeholder=""><br>
-            <span class="error" id="nomErreur"></span>
-    
-            <label for="mail">Votre email</label>
-            <input type="text" id="mail" name="mail"><br>
-            <span class="error" id="mailErreur"></span>
+                <h2>Contactez-moi</h2>
 
-            <label for="tel">Votre téléphone</label>
-            <input type="text" id="tel" name="tel"><br>
-            <span class="error" id="telErreur"></span>
-        
-            <label for="message">Votre message</label>
-            <textarea id="message" name="message" placeholder="Ecrivez ici votre message" rows="8" cols="40"></textarea><br>  <!-- pour changer les dimensions du text area en changeant les valeurs rows et cols-->
-            <span class="error" id="messageErreur"></span>
+                <form id="formContact">
 
-            <input class="bouton" type="submit" value="Envoyer">
-        </form> 
-    </div>
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" name="nom" placeholder=""><br>
+                    <span class="error" id="nomErreur"></span>
+
+                    <label for="mail">Votre email</label>
+                    <input type="text" id="mail" name="mail"><br>
+                    <span class="error" id="mailErreur"></span>
+
+                    <label for="tel">Votre téléphone</label>
+                    <input type="text" id="tel" name="tel"><br>
+                    <span class="error" id="telErreur"></span>
+
+                    <label for="message">Votre message</label>
+                    <textarea id="message" name="message" placeholder="Ecrivez ici votre message" rows="8"
+                        cols="40"></textarea><br>
+                    <!-- pour changer les dimensions du text area en changeant les valeurs rows et cols-->
+                    <span class="error" id="messageErreur"></span>
+
+                    <input class="bouton" type="submit" value="Envoyer">
+                </form>
+            </div>
         </section>
 
-        </main>
+    </main>
 
-        <footer id="footer">
-        </footer>
-        
-        <script src="script.js" type="text/Javascript"></script>
-        <script src="scriptform.js" type="text/Javascript"></script>
-    
+    <footer id="footer">
+    </footer>
+
+    <script src="script.js" type="text/Javascript"></script>
+    <script src="scriptform.js" type="text/Javascript"></script>
+
 </body>
+
 </html>

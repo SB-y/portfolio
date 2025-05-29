@@ -39,22 +39,22 @@ imghover3.addEventListener("mouseout", function() {
 
 
 const duos = [
-    ["img1c", "img1_hover"],
-    ["img2c", "img2_hover"],
-    ["img3c", "img3_hover"],
-  ];
-  
-  for (let i = 0; i < duos.length; i++) {
-    let img = document.getElementById(duos[i][0]);
-    let imghover = document.getElementById(duos[i][1]);
-  
-    img.addEventListener("mouseover", function() {
-      img.style.display = "none";
-      imghover.style.display = "block";
-    });
-  
-    imghover.addEventListener("mouseout", function() {
-      imghover.style.display = "none";
-      img.style.display = "block";
-    });
-  }
+  ["img1c", "img1_hover"],
+  ["img2c", "img2_hover"],
+  ["img3c", "img3_hover"],
+];
+
+for (let i = 0; i < duos.length; i++) {
+  let img = document.getElementById(duos[i][0]);
+  let imghover = document.getElementById(duos[i][1]);
+
+  img.addEventListener("mouseover", function () {
+    img.style.display = "none";
+    imghover.style.display = "block";
+  });
+
+  imghover.addEventListener("mouseout", function () {
+    imghover.style.display = "none";
+    img.style.display = "block";
+  });
+}

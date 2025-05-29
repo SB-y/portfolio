@@ -1,5 +1,5 @@
 
-document.getElementById("formContact").addEventListener("submit", function(event) {
+document.getElementById("formContact").addEventListener("submit", function (event) {
     event.preventDefault();
 
     document.getElementById("nomErreur").textContent = "";
@@ -50,9 +50,9 @@ document.getElementById("formContact").addEventListener("submit", function(event
             document.getElementById("telErreur").textContent = error.message;
         } else if (error.message.includes("message")) {
             document.getElementById("messageErreur").textContent = error.message;
-        } 
-    } 
-    
+        }
+    }
+
     finally {
         console.log("Vérification du formulaire effectuée");
     }
