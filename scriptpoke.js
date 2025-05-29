@@ -30,7 +30,6 @@ async function afficherInfos(event) {
         spaceImg.innerHTML = `<img src="${data.sprites.front_shiny}">`;
 
     } catch (error) {
-
         spaceNom.textContent = "";
         spacePoids.textContent = "";
         spaceImg.textContent = "";
